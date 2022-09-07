@@ -1,0 +1,592 @@
+html, body{
+    background-color: #F8F7F9;
+}
+.pageHeading {
+    min-height: 250px;
+    border-bottom: 3px solid blue;
+    margin-bottom: 5%;
+    background-image: url(assets/background-image.jpg);
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 0%;
+    text-align: left;
+    padding-top: 12%;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+#spinningCoin {
+    display: inline-block;
+    margin-left: 70%;
+}
+
+.rotate {
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+.mI {
+	background-color:#3024de;
+	border-radius:26px;
+	border:1px solid #030303;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:14px;
+	padding:11px 31px;
+	text-decoration:none;
+	text-shadow:1px 5px 2px #273852;
+}
+.mI:hover {
+	background-color:#3212e6;
+}
+.mI:active {
+	position:relative;
+	top:1px;
+    background-color: #3212e6;
+    box-shadow: 0 5px rgb(24, 24, 24);
+    transform: translateY(4px);
+}
+
+#liveGraphs {
+    min-width: 60%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#noMatch {
+    width: 60%;
+    margin-left: 19%;
+    padding-top: 10%;
+    font-size: x-large;
+}
+
+#about {
+    width: 76%;
+    margin-left: 16%;
+}
+
+.navBar {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.btn {
+    width: 90px;
+    height: 55px;
+    border: 2px solid blue;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn button {
+    color: white;
+    font-size: 9px;
+    font-weight: 50;
+  }
+
+#navButtons {
+    display: inline-block;
+    width: 50%;
+    border-color: white;
+
+    border-radius: 5px;
+    margin-left: 80px;
+}
+#navButtons  button {
+    background-color: #f2e5d76f;
+}
+
+
+#search {
+    display: inline-block;
+    margin-left: 14.3%;
+}
+
+#searchCoin {
+    border: 2px solid blue;
+    border-radius:10px;
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: #f2e5d76f;
+}
+
+#searchCoinsCard{
+    width: 100%;
+    padding-left: 5%;
+    margin-left: 10.1%;
+}
+#coinsCard {
+    width: 100%;
+    padding-left: 5%;
+    margin-left: 10.1%;
+}
+
+.card {
+    background-color: #f2e5d76f;
+    width: 325px;
+}
+
+#coinSymbol {
+    height: 13%;
+    text-transform: uppercase;
+    max-width: 85%;
+    display: inline-block;
+    font-size: smaller;
+    font-weight: bold;
+    margin-bottom: 7%;
+}
+
+.form-check {
+    float: right;
+    box-sizing: border-box;
+}
+
+#coinName {
+    height: 13%;
+    font-size: smaller;
+    margin-bottom: 10%;
+    width: 85%;
+}
+
+.card-body>.btn-outline-primary {
+    background-color: blue;
+    color: white;
+}
+
+.collapse {
+    height: 46%;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.form-check {
+    min-height: 0rem;
+}
+
+
+#spinner {
+    margin-left: 45%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 1%;
+}
+
+@media screen and (max-width: 576px) {
+    .pageHeading {
+        min-height: 175px;
+        padding-top: 0%;
+
+    }
+
+    h1 {
+        display: inline-block;
+        margin-left: 0%;
+        text-align: left;
+        padding-top: 30%;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    #spinningCoin {
+        height: 100px;
+        margin-left: 30%;
+    }
+
+    #progBar {
+        padding-left: 30%;
+        padding-top: 5%;
+    }
+
+    #myBar {
+        width: 10%;
+        height: 30px;
+    }
+
+    #liveGraphs {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #about {
+        width: 50%;
+        margin-left: 12%;
+    }
+
+    #navButtons {
+        display: block;
+        width: 100%;
+        margin-left: 2px;
+        margin-bottom: 2%;
+    }
+
+    #search {
+        display: block;
+        margin-left: 0;
+    }
+
+    #coinsCard {
+        margin: 0;
+        width: 100%;
+        padding-left: 10%;
+
+    }
+
+    .card {
+        display: block;
+        width: 100%;
+    }
+
+    #coinName {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        box-sizing: border-box;
+    }
+
+    .collapse {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:768px) {
+    .pageHeading {
+        min-height: 175px;
+        padding-top: 0%;
+    }
+
+    h1 {
+        display: inline-block;
+        margin-left: 0%;
+        text-align: left;
+        padding-top: 30%;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    #spinningCoin {
+        height: 100px;
+        margin-left: 48%;
+    }
+
+    #liveGraphs {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #about {
+        width: 50%;
+        margin-left: 12%;
+    }
+
+    #navButtons {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #search {
+        display: inline-block;
+        margin-left: 0%;
+        margin-top: 1%;
+    }
+
+    #coinsCard {
+        margin: 0;
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    .card {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #coinName {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:850px) {
+    .pageHeading {
+        min-height: 175px;
+        padding-top: 0%;
+    }
+
+    h1 {
+        display: inline-block;
+        margin-left: 0%;
+        text-align: left;
+        padding-top: 30%;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    #spinningCoin {
+        height: 130px;
+        margin-left: 57%;
+    }
+    .navBar {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    #about {
+        width: 50%;
+        margin-left: 11%;
+    }
+
+    #navButtons {
+        display: inline-block;
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    #search {
+        display: inline-block;
+        width: 4%;
+        margin-left: 3.5%;
+        margin-top: 1%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    #coinsCard {
+        margin: 0;
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    .card {
+        display: inline-block;
+        width: 210px;
+    }
+
+    #coinName {
+        margin-top: 7%;
+        margin-bottom: 7%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width:992px) {
+    .pageHeading {
+        min-height: 175px;
+        padding-top: 0%;
+    }
+
+    h1 {
+        display: inline-block;
+        margin-left: 0%;
+        text-align: left;
+        padding-top: 30%;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    #spinningCoin {
+        height: 140px;
+        margin-left: 59%;
+    }
+
+    .navBar {
+        width: 100%;
+        /* margin: auto; */
+        margin-bottom: 5px;
+    }
+
+    #about {
+        width: 50%;
+        margin-left: 9%;
+    }
+
+    #navButtons {
+        display: inline-block;
+        width: 50%;
+        margin-left: 8%;
+    }
+
+    #search {
+        display: inline-block;
+        width: 4%;
+        margin-left: 4.6%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    #coinsCard {
+        margin: 0;
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    .card {
+        display: inline-block;
+        width: 230px;
+    }
+
+    #coinName {
+        margin-top: 7%;
+        margin-bottom: 7%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .pageHeading {
+        min-height: 175px;
+        padding-top: 0%;
+
+    }
+
+    h1 {
+        display: inline-block;
+        margin-left: 0%;
+        text-align: left;
+        padding-top: 10%;
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+
+    #spinningCoin {
+        height: 150px;
+        margin-left: 61%;
+    }
+
+
+    #about {
+        width: 50%;
+        margin-left: 11%;
+    }
+
+    #navButtons {
+        display: inline-block;
+        width: 50%;
+        margin-left: 0px;
+    }
+
+    #search {
+        display: inline-block;
+        margin-top: 1%;
+        margin-left: 24.5%;
+    }
+
+    #coinsCard {
+        margin: 0;
+        width: 97%;
+        padding-left: 10%;
+    }
+
+    .card {
+        display: inline-block;
+        width: 258px;
+    }
+
+    #coinName {
+        margin-top: 8%;
+        margin-bottom: 8%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+    .pageHeading {
+        min-height: 175px;
+        padding-top: 0%;
+
+    }
+
+    h1 {
+        display: inline-block;
+        margin-left: 0%;
+        text-align: left;
+        padding-top: 13%;
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+
+    #spinningCoin {
+        height: 160px;
+        margin-left: 66%;
+    }
+
+    #about {
+        width: 50%;
+        margin-left: 11%;
+    }
+
+    #navButtons {
+        display: inline-block;
+        width: 50%;
+        margin-left: 0px;
+    }
+
+    #search {
+        display: inline-block;
+        margin-top: 1%;
+        margin-left: 24.5%;
+    }
+
+    #coinsCard {
+        margin: 0;
+        width: 97%;
+        padding-left: 10%;
+    }
+
+    .card {
+        display: inline-block;
+        width: 300px;
+    }
+
+    #coinName {
+        margin-top: 8%;
+        margin-bottom: 8%;
+        box-sizing: border-box;
+    }
+}
